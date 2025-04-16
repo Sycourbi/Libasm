@@ -20,6 +20,25 @@ Permet d'utiliser des instructions spécifiques aux architectures 64 bits.
 32 bits : Utilisé dans les systèmes plus anciens, avec des registres comme eax, ebx, etc.
 16 bits : Encore plus ancien, utilisé dans les premiers PC.
 
+**Le Calling Convention :**
+Argument | Registre utilisé
+1er | RDI;
+2ème | RSI;
+3ème | RDX;
+4ème | RCX;
+5ème | R8;
+6ème | R9;
+Valeur de retour :
+registre RAX;
+
+**Les Syscalls en assembleur**
+Un syscall est une fonction du noyau (Linux dans ton cas) que tu appelles directement.
+*Pour Linux en 64 bits :*
+Placer le numéro du syscall dans RAX
+Mettre les arguments dans RDI, RSI, RDX, RCX, R8, R9
+Faire l'instruction syscall
+Le retour est dans RAX
+
 Lien:
 Assembleur les notions de base https://beta.hackndo.com/assembly-basics/
 Les instructions de base de l'assembleur https://sites.uclouvain.be/LSINC1102/pfo/ASM/02-asm-base.html
