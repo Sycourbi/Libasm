@@ -31,6 +31,12 @@ $(NAME): $(OBJ)
 %.o: %.s
 	$(NASM) $(NASMFLAGS) $< -o $@
 
+test: all
+	@echo "Compilation du programme de test..."
+	@gcc -Wall -Wextra -Werror -fPIE -pie main.c libasm.a -o test_libasm
+	@echo "Exécution de ./test_libasm :"
+	@./test_libasm
+
 # Règle pour supprimer les fichiers objets
 clean:
 	@echo "Nettoyage des fichiers objets..."
@@ -40,6 +46,8 @@ clean:
 fclean: clean
 	@echo "Suppression de la librairie $(NAME)..."
 	rm -f $(NAME)
+	@echo "Suppression de l'exécutable de test..."
+	rm -f test_libasm
 
 # Règle pour recompiler entièrement le projet
 re: fclean all
