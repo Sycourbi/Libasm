@@ -25,7 +25,7 @@ Permet d'utiliser des instructions spécifiques aux architectures 64 bits.
 
 **Le Calling Convention :**
 | Argument | Registre utilisé |
-|----------|------------------|
+|:--------:|:----------------:|
 |   1er    |       RDI        |
 | 2ème     | RSI              |
 | 3ème     | RDX              |
