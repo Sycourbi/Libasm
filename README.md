@@ -1,5 +1,8 @@
 # Libasm
 
+**Qu'est-ce que le langage assembleur ?**
+Le langage assembleur (ou assembly language) est un langage de bas niveau qui permet de programmer au plus proche du processeur. Contrairement aux langages comme C ou Python, qui sont dits "de haut niveau", l'assembleur traduit directement les instructions du processeur.
+
 **Syntaxe Intel vs AT&T**
 Il existe principalement deux syntaxes pour écrire de l'assembleur : la syntaxe Intel et la syntaxe AT&T. Voici les principales différences :
 
