@@ -25,14 +25,17 @@ Permet d'utiliser des instructions spécifiques aux architectures 64 bits.
 
 **Le Calling Convention :**
 | Argument | Registre utilisé |
-|1er | RDI |
-2ème | RSI
-3ème | RDX
-4ème | RCX
-5ème | R8
-6ème | R9
+|----------|------------------|
+|   1er    |       RDI        |
+| 2ème     | RSI              |
+| 3ème     | RDX              |
+| 4ème     | RCX              |
+| 5ème     | R8               |
+| 6ème     | R9               |
+
+
 Valeur de retour :
-registre RAX;
+registre RAX
 
 **Les Syscalls en assembleur**
 Un syscall est une fonction du noyau (Linux dans ton cas) que tu appelles directement.
