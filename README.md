@@ -48,6 +48,18 @@ Mettre les arguments dans RDI, RSI, RDX, RCX, R8, R9
 Faire l'instruction syscall
 Le retour est dans RAX
 
+**Exemple d'utilisation** :
+
+```bash
+make
+gcc -Wall -Wextra -Werror -fPIE -pie main.c libasm.a
+./a.out
+```
+ou
+```bash
+make test
+```
+
 Lien:
 Assembleur les notions de base https://beta.hackndo.com/assembly-basics/
 Les instructions de base de l'assembleur https://sites.uclouvain.be/LSINC1102/pfo/ASM/02-asm-base.html
